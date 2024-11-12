@@ -32,14 +32,13 @@
         <div class="image-text">
           <span class="image">
             <img
-              src="{{ url_for('static', filename='images/UNJAYA LOGO.png') }}"
+              src="{{ url_for('static', filename='images/logo tsdn.png') }}"
               alt="logo"
             />
           </span>
 
           <div class="text header-text">
             <span class="name">HFMDetect</span>
-            <span class="univ">UNJAYA</span>
           </div>
         </div>
 
@@ -54,9 +53,15 @@
           </li>
           <ul class="menu-links">
             <li class="nav-link">
-              <a href="#">
+              <a href="{{ url_for('index') }}">
                 <i class="bx bx-home-alt icon"></i>
-                <span class="text nav-text">Dashboard</span>
+                <span class="text nav-text">Home Detect</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="{{ url_for('history') }}">
+                <i class="bx bx-history icon"></i>
+                <span class="text nav-text">History</span>
               </a>
             </li>
           </ul>
