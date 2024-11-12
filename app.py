@@ -164,5 +164,10 @@ def history():
 
     return render_template('history.html', data=data)
 
+
+@app.route('/chatbot')
+def chatbot():
+    return render_template('chatbot.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
